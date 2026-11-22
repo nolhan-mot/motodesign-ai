@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Recette - Cuisine du monde entier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .search-bar {
+            margin-top: 1rem;
+            padding: 0.5rem;
+            width: 50%;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌍 World Recette</h1>
+        <p>Découvrez les saveurs de tous les pays, chez vous !</p>
+        <input type="text" class="search-bar" placeholder="Rechercher une recette, un pays, un ingrédient...">
+    </header>
+
+    <div class="container">
+        <h2>Recettes populaires</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3>🇮🇹 Les vraies Pâtes Carbonara</h3>
+                    <p>Originaire d'Italie, découvrez la vraie recette sans crème fraîche.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>🇯🇵 Ramen Traditionnels</h3>
+                    <p>Un bouillon savoureux et des nouilles japonaises authentiques.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>🇲🇽 Tacos al Pastor</h3>
+                    <p>Des saveurs mexicaines épicées et gourmandes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
